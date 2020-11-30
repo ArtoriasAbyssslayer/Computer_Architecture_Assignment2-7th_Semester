@@ -1,7 +1,7 @@
 #!/usr/bin/env bash 
 ls -la
 #runs a benchmark on gem5      
-echo "Starting benchmark specbzip"
+printf 'Starting benchmark specbzip \n'
 ./build/ARM/gem5.opt -d spec_results/specbzip configs/example/se.py --cpu-type=MinorCPU --caches --l2cache -c spec_cpu2006/401.bzip2/src/specbzip -o "spec_cpu2006/401.bzip2/data/input.program 10" -I 100000000
 #second benchmark on gem5 arm
 echo "Starting benchmark specmcf"
