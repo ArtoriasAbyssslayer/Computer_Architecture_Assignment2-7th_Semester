@@ -1,4 +1,4 @@
-#!/usr/bin/env bash 
+#! /bin/bash
 ls -la
 #runs a benchmark on gem5      
 printf 'Starting benchmark specbzip \n'
