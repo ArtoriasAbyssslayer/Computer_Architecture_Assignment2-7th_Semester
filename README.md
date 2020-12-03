@@ -38,8 +38,7 @@
   --Miss rate</br>
   
    * L1 cache:
-    
-    - icache
+     - icache
       
-    - dcache
+     - dcache
     
