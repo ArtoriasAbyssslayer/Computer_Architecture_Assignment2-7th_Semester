@@ -211,5 +211,46 @@
   
   
   
-     
+  
+    
+   Για τους χρόνους εκτέλεσης:
+
+ * specbzip
+
+   1GHz: sim_seconds 0.160359 # Number of seconds simulated
+
+   2GHz: sim_seconds 0.083654 # Number of seconds simulated
+
+   0.160359 ÷ 0.083654 = 1,9169
+   
+   Ο λόγος αυτός είναι πολύ κοντά στο τέλειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες των μνημών.  
+   
+ * spechmmer 
+   
+   1GHz: sim_seconds 0.118517 # Number of seconds simulated
+
+   2GHz: sim_seconds 0.059390 # Number of seconds simulated
+
+   0.118517 ÷ 0.059390 = 1,995571645
+   
+   Πρόκειται για τελειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες των μνημών.
+* specmcf 
+   
+   1GHz: sim_seconds 0.123107# Number of seconds simulated
+
+   2GHz: sim_seconds 0.062553 # Number of seconds simulated
+
+   0.123107 ÷ 0.062553 = 1,968043099
+   
+   Ο λόγος αυτός είναι πολύ κοντά στο τέλειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες των μνημών.
+* specjeng 
+   
+   1GHz: sim_seconds 0.705640 # Number of seconds simulated
+
+   2GHz: sim_seconds 0.513823 # Number of seconds simulated
+
+   0.705640 ÷ 0.513823 = 1,373313378
+  Ο λόγος απέχει αρκετά από το τέλειο scaling καθώς εδώ(συγκεκριμένο benchmark) είναι καθοριστικός και ο ρόλος των μνημών cache(προσβάσεις στην μνήμη).
+
+ 
     
