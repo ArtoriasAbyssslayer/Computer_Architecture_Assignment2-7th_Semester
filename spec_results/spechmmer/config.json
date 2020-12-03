@@ -1185,7 +1185,7 @@
                             "45000",
                             "--sd",
                             "200",
-                            "-\u2013seed",
+                            "--seed",
                             "0",
                             "spec_cpu2006/456.hmmer/data/bombesin.hmm"
                         ],
