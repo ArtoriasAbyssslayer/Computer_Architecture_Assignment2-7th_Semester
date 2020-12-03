@@ -148,9 +148,67 @@
   ```
   **3)Benchmarks cpu_clock = 2Ghz, 1Ghz**
   
-  Benchmarks για cpu clock 2Ghz
-  απο το [stats.txt](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/stats.txt)
-  από το config.json
+  Benchmarks για cpu clock 2Ghz</br>
+  απο το [stats.txt](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/stats.txt)</br>
+  ```
+   system.clk_domain.clock                          1000                       # Clock period in ticks
+   system.cpu_clk_domain.clock                       500                       # Clock period in ticks
+  ```
+  από το [config.json](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/config.json)</br>
+  ```json
+   system:{
+   ...
+   "clk_domain": {
+            "type": "SrcClockDomain",
+            "cxx_class": "SrcClockDomain",
+            "name": "clk_domain",
+            "path": "system.clk_domain",
+            "clock": [
+                1000
+            ]
+     }
+  ```
+  ```json
+    "cpu_clk_domain": {
+            "type": "SrcClockDomain",
+            "cxx_class": "SrcClockDomain",
+            "name": "cpu_clk_domain",
+            "path": "system.cpu_clk_domain",
+            "clock": [
+                500
+            ]
+  ```
+  Benchmarks για cpu clock 1Ghz</br>
+  απο το [stats.txt](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer1/stats.txt)</br>
+  ```
+   system.clk_domain.clock                          1000                       # Clock period in ticks
+   system.cpu_clk_domain.clock                      1000                       # Clock period in ticks
+  ```
+  από το [config.json](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer1/config.json)</br>
+  ```json
+   system:{
+   ...
+   "clk_domain": {
+            "type": "SrcClockDomain",
+            "cxx_class": "SrcClockDomain",
+            "name": "clk_domain",
+            "path": "system.clk_domain",
+            "clock": [
+                1000
+            ]
+     }
+  ```
+  ```json
+    "cpu_clk_domain": {
+            "type": "SrcClockDomain",
+            "cxx_class": "SrcClockDomain",
+            "name": "cpu_clk_domain",
+            "path": "system.cpu_clk_domain",
+            "clock": [
+                1000
+            ]
+  ```
+  
   
   
      
