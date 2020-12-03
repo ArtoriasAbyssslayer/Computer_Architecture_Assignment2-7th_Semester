@@ -41,4 +41,7 @@
      - icache
       
      - dcache
+     ```
+     system.cpu.dcache.overall_miss_rate::total     0.014312                       # miss rate for overall accesses
+     ```
     
