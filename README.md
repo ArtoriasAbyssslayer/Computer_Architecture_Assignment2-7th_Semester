@@ -156,7 +156,7 @@
   ```
   από το [config.json](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/config.json)</br>
   ```json
-   system:{
+   "system":{
    ...
    "clk_domain": {
             "type": "SrcClockDomain",
@@ -186,7 +186,7 @@
   ```
   από το [config.json](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer1/config.json)</br>
   ```json
-   system:{
+   "system":{
    ...
    "clk_domain": {
             "type": "SrcClockDomain",
