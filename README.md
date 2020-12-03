@@ -39,7 +39,7 @@
   
    * L1 cache:
     
-    * icache
+    - icache
       
-    * dcache
+    - dcache
     
