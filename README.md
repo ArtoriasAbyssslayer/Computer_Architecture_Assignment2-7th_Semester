@@ -7,7 +7,7 @@
 
 
 
-##### **Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 **</br>
+##### Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 </br>
 **1) Βασικές παράμετροι επεξεργαστή / Υποσύστημα μνημών cache**</br>
 Ανοίγοντας το [config.ini](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/config.ini):
 * L1--dcache:
