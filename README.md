@@ -293,3 +293,17 @@
 | C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 256 | 1.654405 |
 | D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.653662 |
 
+| TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
+|-|-|-|-|-|-|-|-|-|
+| A | 64KB | 64KB | 512KB | 2 | 2 | 8 | 128 | 1.179634 |
+| B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 128 | 1.178092 |
+| C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 128 | 1.178092 |
+| D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 128 | 1.178092 |
+
+| TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specsjeng |
+|-|-|-|-|-|-|-|-|-|
+| A | 64KB | 64KB | 512KB | 2 | 2 | 8 | 256 | 3.715711  |
+| B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 256 | 3.715872  |
+| C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 256 | 3.715443  |
+| D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 3.714662  |
+
