@@ -285,3 +285,11 @@
 
 ![SpeclibmCPI-Cachelinesizes](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/cache_line_chage_plots/speclibm.png)
 
+**2) Με βάση το best case cachelinesize-cpi εκτελούμε τα παρακάτω πειράματα**
+| TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | speclibm |
+|-|-|-|-|-|-|-|-|-|
+| A | 64KB | 64KB | 512KB | 2 | 2 | 8 | 256 |  |
+| B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 256 |  |
+| C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 256 |  |
+| D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 |  |
+
