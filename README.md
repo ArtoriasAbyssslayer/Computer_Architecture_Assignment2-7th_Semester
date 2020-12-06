@@ -274,3 +274,5 @@
 | 64KB | 32KB | 2MB | 2 | 2 | 8 | 32B | 1.7078 | 1.21456 | 11.666 | 1.19194 | 3.921 |
 | 64KB | 32KB | 2MB | 2 | 2 | 8 | 128B | 1.5966 | 1.23605 | 4.985 | 1.18016 | 1.990 |
 | 64KB | 32KB | 2MB | 2 | 2 | 8 | 256B | 1.5945 | 1.24091 | 3.715 | 1.18106 | 1.654 |
+
+![SpecbzipCPI-Cachelinesizes](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/cache_line_chage_plots/specbzip.png)
