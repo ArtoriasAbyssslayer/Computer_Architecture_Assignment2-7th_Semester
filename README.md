@@ -1,13 +1,13 @@
 # -Computer_Architecture_Assignment2-7th_Semester-
 ## ΑΡΧΙΤΕΚΤΟΝΙΚΗ ΠΡΟΗΓΜΕΝΩΝ ΥΠΟΛΟΓΙΣΤΩΝ
 
-### Αναφορά 2ου Εργαστηρίου 
+#### Αναφορά 2ου Εργαστηρίου 
 
-#### Συγγραφείς : Σακελλαρίου Βασίλειος ΑΕΜ: 9400, Φίλης Χάρης ΑΕΜ:9449
+### Συγγραφείς : Σακελλαρίου Βασίλειος ΑΕΜ: 9400, Φίλης Χάρης ΑΕΜ:9449
 
 
 
-##### Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 </br>
+### Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 </br>
 **1) Βασικές παράμετροι επεξεργαστή / Υποσύστημα μνημών cache**</br>
 Ανοίγοντας το [config.ini](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/config.ini):
 * L1--dcache:
@@ -263,4 +263,4 @@
    0.262262 ÷ 0.174763 = 1,500672339</br>
    
   Ο λόγος απέχει αρκετά από το τέλειο scaling καθώς εδώ(συγκεκριμένο benchmark) είναι καθοριστικός και ο ρόλος των μνημών cache(προσβάσεις στην μνήμη).
-  ###### Βήμα 2ο. Bελτιστοποίηση απόδοσης στα benchmarks  ~ CPIwise </br>
+  ### Βήμα 2ο. Bελτιστοποίηση απόδοσης στα benchmarks  ~ CPIwise </br>
