@@ -276,3 +276,12 @@
 | 64KB | 32KB | 2MB | 2 | 2 | 8 | 256B | 1.5945 | 1.24091 | 3.715 | 1.18106 | 1.654 |
 
 ![SpecbzipCPI-Cachelinesizes](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/cache_line_chage_plots/specbzip.png)
+
+![SpecmcfCPI-Cachelinesizes](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/cache_line_chage_plots/specmcf.png)
+
+![SpecsjengCPI-Cachelinesizes](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/cache_line_chage_plots/specsjeng.png)
+
+![SpechmmerCPI-Cachelinesizes](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/cache_line_chage_plots/spechmmer.png)
+
+![SpeclibmCPI-Cachelinesizes](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/cache_line_chage_plots/speclibm.png)
+
