@@ -13,16 +13,16 @@
 * L1--dcache:
   * Μέγεθος : 64KB
   * associativity : 2
-  * cache_line_size : 64Bytes
+  * cache_line_size : 64 Bytes
 * L1--icache:
   * Μέγεθος : 32KB
   * associativity : 2
-  * cache_line_size : 64Bytes
+  * cache_line_size : 64 Bytes
 ---------------------------------
 * L2--icache:
   * Μέγεθος : 2MB
   * associativity : 8
-  * cache_line_size : 64Bytes
+  * cache_line_size : 64 Bytes
   
 **2) Αποτελέσματα απο κάθε benchmark**</br>
 
