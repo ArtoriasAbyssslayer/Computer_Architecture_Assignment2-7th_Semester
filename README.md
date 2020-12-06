@@ -292,32 +292,32 @@
 | B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 256 | 1.654777 |
 | C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 256 | 1.654405 |
 | D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.653662 |
-
+![speclibmCPI-FORTYPESABCD](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/other_modifications/speclibm.png)
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
 |-|-|-|-|-|-|-|-|-|
 | A | 64KB | 64KB | 512KB | 2 | 2 | 8 | 128 | 1.179634 |
 | B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 128 | 1.178092 |
 | C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 128 | 1.178092 |
 | D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 128 | 1.178092 |
-
+![spechmmerCPI-FORTYPESABCD](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/other_modifications/spechmmer.png)
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specsjeng |
 |-|-|-|-|-|-|-|-|-|
 | A | 64KB | 64KB | 512KB | 2 | 2 | 8 | 256 | 3.715711  |
 | B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 256 | 3.715872  |
 | C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 256 | 3.715443  |
 | D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 3.714662  |
-
+![specsjengCPI-FORTYPESABCD](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/other_modifications/specsjeng.png)
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specbzip |
 |-|-|-|-|-|-|-|-|-|
 | A | 64KB | 64KB | 512KB | 2 | 2 | 8 | 256 | 1.647000 |
 | B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 256 | 1.571640 |
 | C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 256 | 1.557965 |
 | D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
-
+![SpecbzipCPI-FORTYPESABCD](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/other_modifications/specbzip.png)
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specmcf |
 |-|-|-|-|-|-|-|-|-|
 | A | 64KB | 64KB | 512KB | 2 | 2 | 8 | 32 | 1.146603 |
 | B | 128KB | 128KB | 1MB | 2 | 2 | 8 | 32 | 1.145850 |
 | C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 32 | 1.144656 |
 | D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 32 | 1.144551 |
-
+![SpecmcfCPI-FORTYPESABCD](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/other_modifications/specmcf.png)
