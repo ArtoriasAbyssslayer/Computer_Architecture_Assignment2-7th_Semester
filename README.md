@@ -1,28 +1,28 @@
 # -Computer_Architecture_Assignment2-7th_Semester-
 ## ΑΡΧΙΤΕΚΤΟΝΙΚΗ ΠΡΟΗΓΜΕΝΩΝ ΥΠΟΛΟΓΙΣΤΩΝ
 
-### Αναφορά 2ου Εργαστηρίου 
+#### Αναφορά 2ου Εργαστηρίου 
 
-#### Συγγραφείς : Σακελλαρίου Βασίλειος ΑΕΜ: 9400, Φίλης Χάρης ΑΕΜ:9449
+### Συγγραφείς : Σακελλαρίου Βασίλειος ΑΕΜ: 9400, Φίλης Χάρης ΑΕΜ:9449
 
 
 
-##### Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 </br>
+### Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 </br>
 **1) Βασικές παράμετροι επεξεργαστή / Υποσύστημα μνημών cache**</br>
 Ανοίγοντας το [config.ini](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/config.ini):
 * L1--dcache:
   * Μέγεθος : 64KB
   * associativity : 2
-  * cache_line_size : 64Bytes
+  * cache_line_size : 64 Bytes
 * L1--icache:
   * Μέγεθος : 32KB
   * associativity : 2
-  * cache_line_size : 64Bytes
+  * cache_line_size : 64 Bytes
 ---------------------------------
 * L2--icache:
   * Μέγεθος : 2MB
   * associativity : 8
-  * cache_line_size : 64Bytes
+  * cache_line_size : 64 Bytes
   
 **2) Αποτελέσματα απο κάθε benchmark**</br>
 
@@ -263,4 +263,14 @@
    0.262262 ÷ 0.174763 = 1,500672339</br>
    
   Ο λόγος απέχει αρκετά από το τέλειο scaling καθώς εδώ(συγκεκριμένο benchmark) είναι καθοριστικός και ο ρόλος των μνημών cache(προσβάσεις στην μνήμη).
-    
+  ### Βήμα 2ο. Bελτιστοποίηση απόδοσης στα benchmarks  ~ CPIwise </br>
+  Μετά από τέστ που τρέξαμε προβήκαμε στις εξής βελτιστοποιήσεις(σειρά)</br>
+  **1) Η πρώτη βελτιστοποίηση που κάναμε αφορούσε το cache line size == block size κρατώντας τα υπόλοιπα στις default τιμές τους.**</br>
+
+
+| l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specbzip | specmcf | specsjeng | spechmmer | speclibm |
+|-|-|-|-|-|-|-|-|-|-|-|-|
+| 64KB | 32KB | 2MB | 2 | 2 | 8 | 64B | 1.603595 | 1.23264 | 7.056 | 1.18517 | 2.623 |
+| 64KB | 32KB | 2MB | 2 | 2 | 8 | 32B | 1.7078 | 1.21456 | 11.666 | 1.19194 | 3.921 |
+| 64KB | 32KB | 2MB | 2 | 2 | 8 | 128B | 1.5966 | 1.23605 | 4.985 | 1.18016 | 1.990 |
+| 64KB | 32KB | 2MB | 2 | 2 | 8 | 256B | 1.5945 | 1.24091 | 3.715 | 1.18106 | 1.654 |
