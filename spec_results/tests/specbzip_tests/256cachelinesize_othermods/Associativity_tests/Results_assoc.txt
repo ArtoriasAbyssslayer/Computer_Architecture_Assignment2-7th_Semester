@@ -1,0 +1,5 @@
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+A1	1.569167	0.012543	0.000042	0.119022
+B1	1.545340	0.009890	0.000037	0.151305
+C1	1.539940	0.009328	0.000037	0.160855
+D1	1.539524	0.009306	0.000037	0.158091
