@@ -359,10 +359,10 @@
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specmcf |
 |-|-|-|-|-|-|-|-|-|
-| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 32 | 1.550634 |
-| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 32 | 1.550634 |
-| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 32 | 1.550634 |
-| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16 | 32 | 1.550634 |
+| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 32 | 1.145174  |
+| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 32 | 1.144551  |
+| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 32 | 1.144551  |
+| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16 | 32 | 1.144551 |
 
 
 Για το benchmark **specsjeng**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
@@ -381,7 +381,7 @@
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | speclibm |
 |-|-|-|-|-|-|-|-|-|
-| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 256 |  |
-| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 |  |
-| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | |
-| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 |  |
+| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 256 | 1.672409  |
+| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 | 1.653656  |
+| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 1.653656  |
+| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.653656  |
