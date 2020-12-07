@@ -330,3 +330,5 @@
 | D | 128KB | 128KB | 4MB | 2 | 2 | 8 | 32 | 1.144551 |
 
 ![SpecmcfCPI-FORTYPESABCD](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/other_modifications/specmcf.png)
+
+Συνεχίζουμε με το μικρότερο δυνατό cpi, που μας δίνουν οι περιπτώσεις A,B,C,D (που αφορούν μεγέθη μνημών) και προσπαθούμε για περαιτέρω βελτίωση του cpi αλλάζοντας το associativity των μνημών cache.
