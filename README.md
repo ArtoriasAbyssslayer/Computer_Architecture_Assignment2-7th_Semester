@@ -396,6 +396,13 @@
 ![SpeclibmCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/speclibm.png)
 
 ### Βήμα 3ο εξαγωγή συνάρτησης κόστους.
+```
+ cost = ((l1i_size+l1d_size)/KB)*0.8 + ((l2_size)/KB)0.06 + (l1i_assoc+l1d_assoc+l2_assoc)*0.5 + (cache_line_size)/B*0.7
+```
+**1) Για το benchmark specbizp**
+ ```
+ cost = 256 * 0.8 + 1000*0.06 + (12)*4 + 256*0.7 
+ ```
 **Kριτική εργασίας**</br>
 Παρατηρήσεις:</br>
   * Στο πρώτο βήμα, και συγκεκριμένα στο τρίτο ερώτημα, έπρεπε να ζητείται να τρέξουμε --cpu-clock=1Ghz και όχι 2GHz, διότι 2 Ghz είναι η default τιμή και όχι αντίστροφα.
