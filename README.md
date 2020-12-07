@@ -342,6 +342,7 @@
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 1.539940 |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.539524 |
 
+![SpecbzipCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/specbzip.png)
 
 Για το benchmark **spechmmer**, για το πείραμα type B (l1_dsize = l1_isize = 128KB, l2_size = 1MB) : </br>
 
@@ -353,6 +354,7 @@
 | C1 | 128KB | 128KB | 1MB | 8 | 8 | 8 | 128 | 1.177692 |
 | D1 | 128KB | 128KB | 1MB | 8 | 8 | 16 | 128 | 1.177692 |
 
+![SpechmmerCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/spechmmer.png)
 
 Για το benchmark **specmcf**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
@@ -364,6 +366,7 @@
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 32 | 1.144551  |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16 | 32 | 1.144551 |
 
+![SpecmcfCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/specmcf.png)
 
 Για το benchmark **specsjeng**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
@@ -375,6 +378,7 @@
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 3.714681 |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 3.714669 |
 
+![Specsjeng-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/specsjeng.png)
 
 Για το benchmark **speclibm**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
@@ -385,3 +389,5 @@
 | B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 | 1.653656  |
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 1.653656  |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.653656  |
+
+![SpeclibmCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/speclibm.png)
