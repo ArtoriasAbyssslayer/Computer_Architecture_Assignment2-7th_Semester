@@ -343,7 +343,7 @@
 | D1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
 
 
-Για το benchmark **spechmmer**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 1MB) : </br>
+Για το benchmark **spechmmer**, για το πείραμα type B (l1_dsiz = l1_isize = 128KB, l2_size = 1MB) : </br>
 
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
