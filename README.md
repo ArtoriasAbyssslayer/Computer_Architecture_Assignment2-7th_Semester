@@ -337,10 +337,10 @@
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specbzip |
 |-|-|-|-|-|-|-|-|-|
-| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 256 |  |
-| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 |  |
-| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | |
-| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 |  |
+| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 256 | 1.569167 |
+| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 | 1.545340 |
+| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 1.539940 |
+| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.539524 |
 
 
 Για το benchmark **spechmmer**, για το πείραμα type B (l1_dsiz = l1_isize = 128KB, l2_size = 1MB) : </br>
@@ -348,10 +348,10 @@
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
 |-|-|-|-|-|-|-|-|-|
-| A1 | 128KB | 128KB | 1MB | 1 | 1 | 8 | 128 | 1.550634 |
-| B1 | 128KB | 128KB | 1MB | 4 | 4 | 8 | 128 | 1.550634 |
-| C1 | 128KB | 128KB | 1MB | 8 | 8 | 8 | 128 | 1.550634 |
-| D1 | 128KB | 128KB | 1MB | 8 | 8 | 16 | 128 | 1.550634 |
+| A1 | 128KB | 128KB | 1MB | 1 | 1 | 8 | 128 | 1.184147 |
+| B1 | 128KB | 128KB | 1MB | 4 | 4 | 8 | 128 | 1.177829 |
+| C1 | 128KB | 128KB | 1MB | 8 | 8 | 8 | 128 | 1.177692 |
+| D1 | 128KB | 128KB | 1MB | 8 | 8 | 16 | 128 | 1.177692 |
 
 
 Για το benchmark **specmcf**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
@@ -370,10 +370,10 @@
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specsjeng |
 |-|-|-|-|-|-|-|-|-|
-| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 256 |  |
-| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 |  |
-| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | |
-| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 |  |
+| A1 | 128KB | 128KB | 4MB | 1 | 1 | 8 | 256 | 3.714885 |
+| B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 | 3.714674 |
+| C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 3.714681 |
+| D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 3.714669 |
 
 
 Για το benchmark **speclibm**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
