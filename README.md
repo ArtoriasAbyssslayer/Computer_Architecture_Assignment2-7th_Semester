@@ -333,7 +333,7 @@
 
 Συνεχίζουμε με το μικρότερο δυνατό cpi, που μας δίνουν οι περιπτώσεις A,B,C,D (που αφορούν μεγέθη μνημών) και προσπαθούμε για περαιτέρω βελτίωση του cpi αλλάζοντας το associativity των μνημών cache. Οπότε εκτελούμε τα παρακάτω πειράματα Α1,Β1,C1,D1 για τη καθεμία βέλτιστη περίπτωση αντίστοιχα.</br>
 
-Για το benchmark **specbzip**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+Για το benchmark **specbzip**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specbzip |
 |-|-|-|-|-|-|-|-|-|
@@ -343,7 +343,7 @@
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.539524 |
 
 
-Για το benchmark **spechmmer**, για το πείραμα type B (l1_dsiz = l1_isize = 128KB, l2_size = 1MB) : </br>
+Για το benchmark **spechmmer**, για το πείραμα type B (l1_dsize = l1_isize = 128KB, l2_size = 1MB) : </br>
 
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
@@ -354,7 +354,7 @@
 | D1 | 128KB | 128KB | 1MB | 8 | 8 | 16 | 128 | 1.177692 |
 
 
-Για το benchmark **specmcf**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+Για το benchmark **specmcf**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specmcf |
@@ -365,7 +365,7 @@
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16 | 32 | 1.144551 |
 
 
-Για το benchmark **specsjeng**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+Για το benchmark **specsjeng**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specsjeng |
@@ -376,7 +376,7 @@
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 3.714669 |
 
 
-Για το benchmark **speclibm**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+Για το benchmark **speclibm**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | speclibm |
