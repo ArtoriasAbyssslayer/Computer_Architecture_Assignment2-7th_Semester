@@ -331,7 +331,7 @@
 
 ![SpecmcfCPI-FORTYPESABCD](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/other_modifications/specmcf.png)
 
-Συνεχίζουμε με το μικρότερο δυνατό cpi, που μας δίνουν οι περιπτώσεις A,B,C,D (που αφορούν μεγέθη μνημών) και προσπαθούμε για περαιτέρω βελτίωση του cpi αλλάζοντας το associativity των μνημών cache.</br>
+Συνεχίζουμε με το μικρότερο δυνατό cpi, που μας δίνουν οι περιπτώσεις A,B,C,D (που αφορούν μεγέθη μνημών) και προσπαθούμε για περαιτέρω βελτίωση του cpi αλλάζοντας το associativity των μνημών cache. Οπότε εκτελούμε τα παρακάτω πειράματα Α1,Β1,C1,D1 για τη καθεμία βέλτιστη περίπτωση αντίστοιχα.</br>
 
 Για το benchmark **specbzip**, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
 
