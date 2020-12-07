@@ -391,3 +391,8 @@
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.653656  |
 
 ![SpeclibmCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/speclibm.png)
+
+### Βήμα 3ο εξαγωγή συνάρτησης κόστους.
+**Kριτική εργασίας**</br>
+* Παρατηρήσεις:</br>
+ * Στο πρώτο βήμα, και συγκεκριμένα στο τρίτο ερώτημα, έπρεπε να ζητείται να τρέξουμε --cpu-clock=1Ghz και όχι 2GHz, διότι 2 Ghz είναι η default τιμή και όχι αντίστροφα.
