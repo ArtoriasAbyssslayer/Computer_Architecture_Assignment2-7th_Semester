@@ -5,7 +5,7 @@
 
 ### Συγγραφείς : Σακελλαρίου Βασίλειος ΑΕΜ: 9400, Φίλης Χάρης ΑΕΜ:9449
 
-![bench](https://cdn.educba.com/academy/wp-content/uploads/2019/08/Benchmark-Testing.png)
+![bench](https://dmi-uploads.imgix.net/general/blog_compare_benchmark.gif?fit=crop&fm=jpg&h=630&ixlib=php-1.1.0&q=60&w=1200&s=ad3187fc6bbb79af514f600b711f9a0d)
 
 ### Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 </br>
 **1) Βασικές παράμετροι επεξεργαστή / Υποσύστημα μνημών cache**</br>
