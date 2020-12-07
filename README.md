@@ -333,9 +333,46 @@
 
 Συνεχίζουμε με το μικρότερο δυνατό cpi, που μας δίνουν οι περιπτώσεις A,B,C,D (που αφορούν μεγέθη μνημών) και προσπαθούμε για περαιτέρω βελτίωση του cpi αλλάζοντας το associativity των μνημών cache.</br>
 
-Για το benchmark specbzip, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB : </br>
+Για το benchmark specbzip, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
 
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specbzip |
+|-|-|-|-|-|-|-|-|-|
+| A1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| B1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| C1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| D1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+
+
+Για το benchmark spechmmer, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+
+| TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
+|-|-|-|-|-|-|-|-|-|
+| A1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| B1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| C1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| D1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+
+Για το benchmark spechmmer, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+
+| TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
+|-|-|-|-|-|-|-|-|-|
+| A1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| B1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| C1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| D1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+
+Για το benchmark spechmmer, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+
+| TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
+|-|-|-|-|-|-|-|-|-|
+| A1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| B1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| C1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+| D1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
+
+Για το benchmark spechmmer, για το πείραμα type D (l1_dsiz = l1_isize = 128KB, l2_size = 4MB) : </br>
+
+| TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | spechmmer |
 |-|-|-|-|-|-|-|-|-|
 | A1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
 | B1 | 128KB | 128KB | 4MB | 2 | 2 | 8 | 256 | 1.550634 |
