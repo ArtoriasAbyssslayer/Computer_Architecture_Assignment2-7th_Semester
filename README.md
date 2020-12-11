@@ -153,7 +153,8 @@
   ```
   system.l2.overall_miss_rate::total           0.999978                       # miss rate for overall accesses
   ```
-  ![specsjeng](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/bar/specsjeng.png)
+  ![specsjeng](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/bar/specsjeng.png)<\br>
+  
   **3)Benchmarks cpu_clock = 2Ghz, 1Ghz**
   
   Benchmarks για cpu clock 2Ghz</br>
