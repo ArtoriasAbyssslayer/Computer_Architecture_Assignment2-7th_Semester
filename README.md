@@ -408,7 +408,7 @@
 ```
  cost = ((l1i_size+l1d_size)/KB)*0.8 + ((l2_size)/KB)0.05 + (l1i_assoc+l1d_assoc+l2_assoc)*2 + ((cache_line_size)/32B)*5
 ```
-**Best case cost function values for each benchmark:**
+**Best case  CPI cost values for each benchmark:**
 * specbzip
   * cost =  488.8 (D1 case)
 * spechmmer
