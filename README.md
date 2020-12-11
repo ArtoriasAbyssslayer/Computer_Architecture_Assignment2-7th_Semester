@@ -5,7 +5,7 @@
 
 ### Συγγραφείς : Σακελλαρίου Βασίλειος ΑΕΜ: 9400, Φίλης Χάρης ΑΕΜ:9449
 
-
+![bench](https://dmi-uploads.imgix.net/general/blog_compare_benchmark.gif?fit=crop&fm=jpg&h=630&ixlib=php-1.1.0&q=60&w=1200&s=ad3187fc6bbb79af514f600b711f9a0d)
 
 ### Βήμα 1ο. Εκτέλεση SPEC CPU2006 Benchmarks στον gem5 </br>
 **1) Βασικές παράμετροι επεξεργαστή / Υποσύστημα μνημών cache**</br>
@@ -208,8 +208,11 @@
                 1000
             ]
   ```
+  To system.clk_domain.clock δηλαδή το ρολόι συγχρονισμού του συστήματος είναι ίδιο και στις δύο περιπτώσεις και ίσο με 1000 δηλαδή 1 GHz.</br>
   
+  Το default system.cpu_clk_domain δηλαδή το ρολόι χρονισμού της CPU είναι 500 ή 2 GHz. Το ρολόι αυτό ρυθμίζει το ρολόι του CPU και των μονάδων επεξεργασίας του, δηλαδή των L1 Data και Instruction cache, της L2 cache.</br>
   
+  Αν προσθέσουμε άλλον έναν επεξεργαστή η συχνότητα θα είναι αυτή που δηλώνεται στο αρχείο se.py, δηλαδή 1 GHz για το system.clk_domain.clock και 2 GHz για το system.cpu_clk_domain , εκτός αν ορίσουμε διαφορετική συχνότητα με τις εντολές --sys-clock = # και --cpu-clock = # αντίστοιχα
   
   
     
@@ -223,7 +226,7 @@
 
    0.160359 ÷ 0.083654 = 1,9169
    
-   Ο λόγος αυτός είναι πολύ κοντά στο τέλειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες των μνημών.  
+   Ο λόγος αυτός είναι πολύ κοντά στο τέλειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες απόκρισης των μνημών.  
    
  * spechmmer 
    
@@ -233,7 +236,7 @@
 
    0.118517 ÷ 0.059390 = 1,995571645
    
-   Πρόκειται για τελειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες των μνημών.
+   Πρόκειται για τελειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες απόκρισης των μνημών.
 * specmcf 
    
    1GHz: sim_seconds 0.123107# Number of seconds simulated
@@ -242,7 +245,7 @@
 
    0.123107 ÷ 0.062553 = 1,968043099
    
-   Ο λόγος αυτός είναι πολύ κοντά στο τέλειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες των μνημών.
+   Ο λόγος αυτός είναι πολύ κοντά στο τέλειο scaling, γιατί για το συγκεκριμένο benchmark το ρολόι του επεξεργαστή παίζει τον καθοριστικό παράγοντα και όχι τόσο οι ταχύτητες απόκρισης των μνημών.
 * specsjeng 
    
    1GHz: sim_seconds 0.705640 # Number of seconds simulated
@@ -251,7 +254,7 @@
 
    0.705640 ÷ 0.513823 = 1,373313378</br>
    
-  Ο λόγος απέχει αρκετά από το τέλειο scaling καθώς εδώ(συγκεκριμένο benchmark) είναι καθοριστικός και ο ρόλος των μνημών cache(προσβάσεις στην μνήμη).
+  Ο λόγος απέχει αρκετά από το τέλειο scaling καθώς εδώ(συγκεκριμένο benchmark) είναι καθοριστικός και ο ρόλος των αποκρίσεων των μνημών cache (προσβάσεις στην μνήμη).
 
  
 * speclibm
@@ -262,7 +265,7 @@
 
    0.262262 ÷ 0.174763 = 1,500672339</br>
    
-  Ο λόγος απέχει αρκετά από το τέλειο scaling καθώς εδώ(συγκεκριμένο benchmark) είναι καθοριστικός και ο ρόλος των μνημών cache(προσβάσεις στην μνήμη).
+  Ο λόγος απέχει αρκετά από το τέλειο scaling καθώς εδώ(συγκεκριμένο benchmark) είναι καθοριστικός και ο ρόλος των αποκρίσεων των μνημών cache (προσβάσεις στην μνήμη).
   ### Βήμα 2ο. Bελτιστοποίηση απόδοσης στα benchmarks  ~ CPIwise </br>
   Μετά από τέστ που τρέξαμε προβήκαμε στις εξής βελτιστοποιήσεις(σειρά)</br>
   **1) Η πρώτη βελτιστοποίηση που κάναμε αφορούσε το cache line size == block size κρατώντας τα υπόλοιπα στις default τιμές τους.**</br>
@@ -342,6 +345,7 @@
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 1.539940 |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.539524 |
 
+![SpecbzipCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/specbzip.png)
 
 Για το benchmark **spechmmer**, για το πείραμα type B (l1_dsize = l1_isize = 128KB, l2_size = 1MB) : </br>
 
@@ -353,6 +357,7 @@
 | C1 | 128KB | 128KB | 1MB | 8 | 8 | 8 | 128 | 1.177692 |
 | D1 | 128KB | 128KB | 1MB | 8 | 8 | 16 | 128 | 1.177692 |
 
+![SpechmmerCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/spechmmer.png)
 
 Για το benchmark **specmcf**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
@@ -364,6 +369,7 @@
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 32 | 1.144551  |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16 | 32 | 1.144551 |
 
+![SpecmcfCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/specmcf.png)
 
 Για το benchmark **specsjeng**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
@@ -375,6 +381,7 @@
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 3.714681 |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 3.714669 |
 
+![Specsjeng-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/specsjeng.png)
 
 Για το benchmark **speclibm**, για το πείραμα type D (l1_dsize = l1_isize = 128KB, l2_size = 4MB) : </br>
 
@@ -385,3 +392,18 @@
 | B1 | 128KB | 128KB | 4MB | 4 | 4 | 8 | 256 | 1.653656  |
 | C1 | 128KB | 128KB | 4MB | 8 | 8 | 8 | 256 | 1.653656  |
 | D1 | 128KB | 128KB | 4MB | 8 | 8 | 16| 256 | 1.653656  |
+
+![SpeclibmCPI-ASSOC](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/associativity_tests_plots/speclibm.png)
+
+### Βήμα 3ο εξαγωγή συνάρτησης κόστους.
+```
+ cost = ((l1i_size+l1d_size)/KB)*0.8 + ((l2_size)/KB)0.1 + (l1i_assoc+l1d_assoc+l2_assoc)*2 + ((cache_line_size)/B)*0.2
+```
+**1) Για το benchmark specbizp**
+ ```
+ cost = 256 * 0.8 + 1024*0.1 + (12)*2 + 256*0.2 = 382,24
+ ```
+**Kριτική εργασίας**</br>
+Παρατηρήσεις:</br>
+  * Στο πρώτο βήμα, και συγκεκριμένα στο τρίτο ερώτημα, έπρεπε να ζητείται να τρέξουμε --cpu-clock=1Ghz και όχι 2GHz, διότι 2 Ghz είναι η default τιμή και όχι αντίστροφα.
+  * Έχουμε απορίες στο βήμα 3
