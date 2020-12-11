@@ -50,6 +50,8 @@
   ```
   system.l2.overall_miss_rate::total           0.295247                       # miss rate for overall accesses
   ```
+  
+  ![specbzip](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/bar/specbzip.png) 
 * -- Benchmark **spechmmer**</br>
 Από το αρχείο [stats.txt](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/spechmmer/stats.txt):</br>
   --Χρόνος εκτέλεσης:</br>
@@ -71,9 +73,12 @@
      system.cpu.dcache.overall_miss_rate::total     0.001628                       # miss rate for overall accesses
      ```
   * L2 cache
-  ```
+  ``
   system.l2.overall_miss_rate::total           0.078296                       # miss rate for overall accesses
   ```
+  ```
+  ![spechmmer](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/bar/spechmmer.png)
+  
 * -- Benchmark **speclibm**</br>
 Από το αρχείο [stats.txt](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/speclibm/stats.txt):</br>
   --Χρόνος εκτέλεσης:</br>
@@ -98,6 +103,7 @@
   ```
   system.l2.overall_miss_rate::total           0.999940                       # miss rate for overall accesses
   ```
+  ![speclibm](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/bar/speclibm.png)
 * -- Benchmark **specmcf**</br>
 Από το αρχείο [stats.txt](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/specmcf/stats.txt):</br>
   --Χρόνος εκτέλεσης:</br>
@@ -122,6 +128,7 @@
   ```
   system.l2.overall_miss_rate::total           0.067668                       # miss rate for overall accesses
   ```
+  ![specmcf](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/bar/specmcf.png)
 * -- Benchmark **specsjeng**</br>
 Από το αρχείο [stats.txt](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/spec_results/specsjeng/stats.txt):</br>
   --Χρόνος εκτέλεσης:</br>
@@ -146,6 +153,7 @@
   ```
   system.l2.overall_miss_rate::total           0.999978                       # miss rate for overall accesses
   ```
+  ![specsjeng](https://github.com/harryfilis/Computer_Architecture_Assignment2-7th_Semester/blob/master/plots/bar/specsjeng.png)
   **3)Benchmarks cpu_clock = 2Ghz, 1Ghz**
   
   Benchmarks για cpu clock 2Ghz</br>
