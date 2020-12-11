@@ -408,7 +408,17 @@
 ```
  cost = ((l1i_size+l1d_size)/KB)*0.8 + ((l2_size)/KB)0.1 + (l1i_assoc+l1d_assoc+l2_assoc)*2 + ((cache_line_size)/B)*0.2
 ```
-**1) Για το benchmark specbizp**
+**Best case cost function values for each benchmark:**
+* specbzip
+  * cost =  
+* spechmmer
+  * cost =
+* specsjeng
+  * cost =
+* specmcf
+  * cost =
+* speclibm
+  * cost =
  ```
  cost = 256 * 0.8 + 1024*0.1 + (12)*2 + 256*0.2 = 382,24
  ```
