@@ -427,8 +427,7 @@
 | TEST_TYPE | l1_dsize | l1_isize | l2_size | l1d_assoc | l1i_assoc | l2_assoc | cacheline_size | specbzip |
 |-|-|-|-|-|-|-|-|-|
 | C | 128KB | 128KB | 2MB | 2 | 2 | 8 | 256 | 1.557965 |
-
-οπου εχουμε 1MB L2_size και μέσο cpi 1.55 (+0.01 από το best case D1) και χαμηλότερο associativity. Η επιλογή αυτή έχει κόστος 
+. Η επιλογή αυτή έχει κόστος 
   * cost = 368 
 μειώσαμε το κόστος κατά 120.8 (cost-120.8)
 * spechmmer
