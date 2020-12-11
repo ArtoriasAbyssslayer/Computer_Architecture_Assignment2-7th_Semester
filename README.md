@@ -406,22 +406,20 @@
 
 ### Βήμα 3ο εξαγωγή συνάρτησης κόστους.
 ```
- cost = ((l1i_size+l1d_size)/KB)*0.8 + ((l2_size)/KB)0.1 + (l1i_assoc+l1d_assoc+l2_assoc)*2 + ((cache_line_size)/32B)*5
+ cost = ((l1i_size+l1d_size)/KB)*0.8 + ((l2_size)/KB)0.05 + (l1i_assoc+l1d_assoc+l2_assoc)*2 + ((cache_line_size)/32B)*5
 ```
 **Best case cost function values for each benchmark:**
 * specbzip
-  * cost =  
+  * cost =  488.8 (D1 case)
 * spechmmer
-  * cost =
+  * cost =  324   (C1 case)
 * specsjeng
-  * cost =
+  * cost =  508.8 (D1 case)
 * specmcf
-  * cost =
+  * cost =  441.8 (B1 case)
 * speclibm
-  * cost =
- ```
- cost = 256 * 0.8 + 1024*0.1 + (12)*2 + 256*0.2 = 382,24
- ```
+  * cost =  476.8 (B1 case)
+
 **Kριτική εργασίας**</br>
 Παρατηρήσεις:</br>
   * Στο πρώτο βήμα, και συγκεκριμένα στο τρίτο ερώτημα, έπρεπε να ζητείται να τρέξουμε --cpu-clock=1Ghz και όχι 2GHz, διότι 2 Ghz είναι η default τιμή και όχι αντίστροφα.
